@@ -3,6 +3,7 @@
 Página web del proyecto **Parabolic Pets**, un juego del tiro parabólico para niños desarrollado por ElOA Dev Team. 
 
 🔗 **Demo:** [Ver en línea](https://eloadev.github.io/proyects/parabolic-pets/inicioPets/)
+🔗 **Código:** [Ver código de esta página](/portafolio-v2/src/pages/parabolic-pets/)
 
 ![Party Problems](img/party-problems.png)
 
