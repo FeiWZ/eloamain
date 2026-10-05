@@ -23,8 +23,10 @@ Cada proyecto tiene su propio README con la descripción, herramientas, funciona
 
 - [Página de inicio](docs/inicio/)
 - [Parabolic Pets](docs/parabolic-pets/)
+- [Party Problems](docs/party-problems/)
+- [Sistema de Coordenadas](docs/coordenadas/)
 - [Calculadoras de coordenadas](docs/calculadoras-coordenadas/)
-- [Juego de proyección interactiva](docs/juego-proyeccion/)
+- [Juego de proyección interactiva "Weavy"](docs/juego-proyeccion/)
 
 ## Estructura del repositorio
 
