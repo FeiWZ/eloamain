@@ -6,7 +6,7 @@ La página funciona como un **portafolio en equipo** donde mostramos nuestros pr
 
 🔗 **Ver en línea:** [eloadev.github.io/proyectos](https://eloadev.github.io/proyects/)
 
-![Página de inicio de ELOA](docs/inicio/img/inicio.png)
+<img width="1521" height="727" alt="Captura de pantalla 2026-09-28 102557" src="https://github.com/user-attachments/assets/3d704f4a-bd7e-4e1e-9377-dd3c44edaf62" />
 
 ## Herramientas
 
