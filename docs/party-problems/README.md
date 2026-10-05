@@ -5,7 +5,7 @@ Página web del proyecto **Party Problems**, un juego de matemáticas para niño
 🔗 **Demo:** [Ver en línea](https://eloadev.github.io/proyects/party-problems/inicioParty/)
 🔗 **Código:** [Ver código de esta página](/portafolio-v2/src/pages/party-problems/)
 
-![Party Problems](img/party-problems.png)
+<img width="1518" height="727" alt="Captura de pantalla 2026-09-28 104916" src="https://github.com/user-attachments/assets/bcf64a78-323d-49b5-b391-fb10fda3d943" />
 
 ## Descripción
 
@@ -26,9 +26,9 @@ Party Problems es un juego educativo que ayuda a niños de primaria a practicar 
 
 ## Capturas
 
-![Explicación del juego](img/explicacion.png)
-![Juego en la página](img/juego.png)
-![Evidencias de congresos](img/evidencias.png)
+<img width="1521" height="722" alt="Captura de pantalla 2026-09-28 104958" src="https://github.com/user-attachments/assets/2fd7afe4-983d-43c9-a518-56642a89a3fa" />
+<img width="1521" height="727" alt="Captura de pantalla 2026-09-28 105400" src="https://github.com/user-attachments/assets/2d2f6ee8-40e7-4112-853b-7c28f5658ad1" />
+<img width="1517" height="727" alt="Captura de pantalla 2026-09-28 105009" src="https://github.com/user-attachments/assets/fe04214d-03b4-4a7f-aaf7-faf67c863469" />
 
 ## Equipo
 
