@@ -5,7 +5,7 @@ Página web con **dos calculadoras interactivas** para calcular distancias y hac
 🔗 **Demo:** [Ver en línea](https://eloadev.github.io/proyects/Calculadoras/calculadoras/)
 🔗 **Código:** [Ver código de esta página](/portafolio-v2/src/pages/Calculadoras/)
 
-![Calculadoras de coordenadas](img/calculadoras.png)
+<img width="1517" height="728" alt="Captura de pantalla 2026-10-04 210635" src="https://github.com/user-attachments/assets/40d0db60-1bf0-4cba-ba4e-bb57f7cfa017" />
 
 ## Descripción
 
@@ -29,8 +29,7 @@ Este proyecto ayuda a practicar y comprobar ejercicios de física relacionados c
 
 ## Capturas
 
-![Calculadora de distancias](img/distancias.png)
-![Calculadora de conversiones](img/conversiones.png)
+<img width="1522" height="730" alt="Captura de pantalla 2026-09-28 110211" src="https://github.com/user-attachments/assets/3edabade-5c29-42a5-bde2-ee8a6557f3e6" /><img width="1517" height="726" alt="Captura de pantalla 2026-09-28 110154" src="https://github.com/user-attachments/assets/02fe6316-f455-4211-9566-41aa9571c2b8" />
 
 ## Equipo
 
