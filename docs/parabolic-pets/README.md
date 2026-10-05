@@ -5,7 +5,7 @@ Página web del proyecto **Parabolic Pets**, un juego del tiro parabólico para 
 🔗 **Demo:** [Ver en línea](https://eloadev.github.io/proyects/parabolic-pets/inicioPets/)
 🔗 **Código:** [Ver código de esta página](/portafolio-v2/src/pages/parabolic-pets/)
 
-<img width="1518" height="727" alt="Captura de pantalla 2026-09-28 104916" src="https://github.com/user-attachments/assets/ced36b07-9bc8-46c2-a3da-5b3602bf1a69" />
+<img width="1523" height="718" alt="Captura de pantalla 2026-10-05 112359" src="https://github.com/user-attachments/assets/097c2477-cc9d-4e46-b03c-a696a6ab464d" />
 
 ## Descripción
 
@@ -26,9 +26,9 @@ Parabolic Pets es un juego educativo que ayuda a niños de primaria a practicar 
 
 ## Capturas
 
-<img width="1521" height="722" alt="Captura de pantalla 2026-09-28 104958" src="https://github.com/user-attachments/assets/60391267-5e28-4f24-9272-7e492e0be5fe" />
-<img width="1521" height="727" alt="Captura de pantalla 2026-09-28 105400" src="https://github.com/user-attachments/assets/be08d3eb-00d5-42c3-89da-8b8bfe9e8617" />
-<img width="1517" height="727" alt="Captura de pantalla 2026-09-28 105009" src="https://github.com/user-attachments/assets/eefc7211-26ca-48ba-971e-edbae43397b2" />
+<img width="1520" height="723" alt="Captura de pantalla 2026-10-05 112456" src="https://github.com/user-attachments/assets/aec69b37-9ff0-40b2-9786-b4c26e4be848" />
+<img width="1517" height="720" alt="Captura de pantalla 2026-10-05 112636" src="https://github.com/user-attachments/assets/67c3ad79-7a9d-4781-b751-4672b0d61fb9" />
+<img width="1518" height="722" alt="Captura de pantalla 2026-10-05 112517" src="https://github.com/user-attachments/assets/10aa6964-02d5-4d46-89d5-7ed938ca08d4" />
 
 ## Equipo
 
