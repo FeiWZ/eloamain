@@ -5,7 +5,7 @@ Página web para enseñar y prácticar  **la conversión de coordenadas**, un te
 🔗 **Demo:** [Ver en línea](https://eloadev.github.io/proyects/Coordenadas/graficar/)
 🔗 **Código:** [Ver código de esta página](/portafolio-v2/src/pages/Coordenadas/)
 
-![Coordenadas](img/calculadoras.png)
+<img width="1518" height="726" alt="Captura de pantalla 2026-10-05 112932" src="https://github.com/user-attachments/assets/6dedcd5e-69b3-433c-a189-7825626e81d3" />
 
 ## Descripción
 
@@ -30,8 +30,9 @@ Este proyecto ayuda a graficar y practicar ejercicios de física relacionados co
 
 ## Capturas
 
-![Sección formulas](img/distancias.png)
-![Sección graficar](img/conversiones.png)
+<img width="1518" height="727" alt="Captura de pantalla 2026-10-05 112942" src="https://github.com/user-attachments/assets/d0c94124-0507-4e3d-8077-1ad6cdd104ed" />
+<img width="1517" height="721" alt="Captura de pantalla 2026-10-05 112950" src="https://github.com/user-attachments/assets/98605e04-da51-4b1e-a35e-d69a7c4badc0" />
+<img width="1517" height="706" alt="Captura de pantalla 2026-10-05 112959" src="https://github.com/user-attachments/assets/6a11f965-9785-447e-8af4-fb425eb7d88b" />
 
 ## Equipo
 
