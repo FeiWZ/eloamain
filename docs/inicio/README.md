@@ -3,7 +3,7 @@
 Página principal del sitio de ELOA Dev Team. Es la primera página que ve el visitante: explica qué es ELOA, quiénes somos y muestra la lista de proyectos del equipo.
 
 🔗 **Demo:** [Ver en línea](https://eloadev.github.io/proyectos/)
-🔗 **Código:** [Ver código de esta página](/portafolio-v2/src/pages/Calculadoras/)
+🔗 **Código:** [Ver código de esta página](/portafolio-v2/src/pages/index.html/)
 
 ![Página de inicio](img/inicio.png)
 
