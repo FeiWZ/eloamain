@@ -1,20 +1,20 @@
 ---
+const base = import.meta.env.BASE_URL;
 // src/components/NavWeavy.astro
 const currentPath = Astro.url.pathname;
 
 const links = [
-  { href: "/proyects/Weavy/inicioWeavy", label: "INICIO" },
-  { href: "/proyects/Weavy/weavy", label: "JUEGO" },
-  { href: "/proyects/Weavy/sobrejuegoWeavy", label: "SOBRE EL JUEGO" },
-   { href: "/proyects/Weavy/videosWeavy", label: "VIDEOS" },
-  { href: "/proyects/Weavy/evidenciaWeavy", label: "EVIDENCIAS" },
+  { href: `${base}Weavy/inicioWeavy`, label: "INICIO" },
+  { href: `${base}Weavy/weavy`, label: "JUEGO" },
+  { href: `${base}Weavy/sobrejuegoWeavy`, label: "SOBRE EL JUEGO" },
+  { href: `${base}Weavy/evidenciaWeavy`, label: "EVIDENCIAS" },
 ];
 ---
 
 <nav class="game-nav">
     <div class="game-nav-logo">
-        <a href="/proyects/">
-            <img src="/proyects/imagenes/inicio/logo1FINAL.png" alt="ELOA Logo">
+        <a href={`${base}`}>
+            <img src={`${base}imagenes/inicio/logo1FINAL.png`} alt="ELOA Logo">
         </a>
     </div>
     {links.map(link => (

@@ -1,11 +1,12 @@
 ---
+const base = import.meta.env.BASE_URL;
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout>
 <div class="lerp-hero">
-  <img class="sticker sticker-estrella sticker-hero-1" src="/proyects/imagenes/lerp/estrella.png" alt="" loading="lazy" decoding="async" />
-  <img class="sticker sticker-estrella sticker-hero-2" src="/proyects/imagenes/lerp/estrella.png" alt="" loading="lazy" decoding="async" />
+  <img class="sticker sticker-estrella sticker-hero-1" src={`${base}imagenes/lerp/estrella.png`} alt="" loading="lazy" decoding="async" />
+  <img class="sticker sticker-estrella sticker-hero-2" src={`${base}imagenes/lerp/estrella.png`} alt="" loading="lazy" decoding="async" />
 
   <p class="lerp-eyebrow">Conoce a</p>
   <h1 class="lerp-wordmark">LERP</h1>
@@ -33,14 +34,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </div>
 
-  <img class="lerp-hero-img" src="/proyects/imagenes/lerp/lerp-laptop.png" alt="LERP, el robot mascota de ELOA, recostado sobre una laptop" fetchpriority="high" decoding="async" />
+  <img class="lerp-hero-img" src={`${base}imagenes/lerp/lerp-laptop.png`} alt="LERP, el robot mascota de ELOA, recostado sobre una laptop" fetchpriority="high" decoding="async" />
 </div>
 
 <section class="rasgo rasgo-naranja">
-  <img class="sticker sticker-mariquita sticker-naranja-1" src="/proyects/imagenes/lerp/mariquita.png" alt="" loading="lazy" decoding="async" />
-  <img class="sticker sticker-mariquita sticker-naranja-2" src="/proyects/imagenes/lerp/mariquita.png" alt="" loading="lazy" decoding="async" />
+  <img class="sticker sticker-mariquita sticker-naranja-1" src={`${base}imagenes/lerp/mariquita.png`} alt="" loading="lazy" decoding="async" />
+  <img class="sticker sticker-mariquita sticker-naranja-2" src={`${base}imagenes/lerp/mariquita.png`} alt="" loading="lazy" decoding="async" />
   <div class="rasgo-contenido">
-    <img class="rasgo-img" src="/proyects/imagenes/lerp/lerp-bombilla.png" alt="LERP sosteniendo un foco encendido, emocionado" loading="lazy" decoding="async" />
+    <img class="rasgo-img" src={`${base}imagenes/lerp/lerp-bombilla.png`} alt="LERP sosteniendo un foco encendido, emocionado" loading="lazy" decoding="async" />
     <div class="rasgo-texto">
       <p class="rasgo-eyebrow">Coleccionista de bugs</p>
       <p class="rasgo-frase">No se asusta con errores — los ve como <strong>"mascotas"</strong>.</p>
@@ -50,10 +51,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </section>
 
 <section class="rasgo rasgo-morado">
-  <img class="sticker sticker-estrella sticker-morado-1" src="/proyects/imagenes/lerp/estrella.png" alt="" loading="lazy" decoding="async" />
-  <img class="sticker sticker-lerp-mini sticker-morado-libro" src="/proyects/imagenes/lerp/lerp-libro.png" alt="" loading="lazy" decoding="async" />
+  <img class="sticker sticker-estrella sticker-morado-1" src={`${base}imagenes/lerp/estrella.png`} alt="" loading="lazy" decoding="async" />
+  <img class="sticker sticker-lerp-mini sticker-morado-libro" src={`${base}imagenes/lerp/lerp-libro.png`} alt="" loading="lazy" decoding="async" />
   <div class="rasgo-contenido rasgo-contenido-invertido">
-    <img class="rasgo-img" src="/proyects/imagenes/lerp/lerp-highfive.png" alt="LERP con los brazos extendidos intentando chocar las manos" loading="lazy" decoding="async" />
+    <img class="rasgo-img" src={`${base}imagenes/lerp/lerp-highfive.png`} alt="LERP con los brazos extendidos intentando chocar las manos" loading="lazy" decoding="async" />
     <div class="rasgo-texto">
       <p class="rasgo-eyebrow">El "high-five" fallido</p>
       <p class="rasgo-frase">Siempre intenta chocar las manos para celebrar... pero sus <strong>cálculos de trayectoria</strong> fallan.</p>
@@ -63,9 +64,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </section>
 
 <section class="rasgo rasgo-azul">
-  <img class="sticker sticker-lerp-mini sticker-azul-examen" src="/proyects/imagenes/lerp/lerp-examen.png" alt="" loading="lazy" decoding="async" />
+  <img class="sticker sticker-lerp-mini sticker-azul-examen" src={`${base}imagenes/lerp/lerp-examen.png`} alt="" loading="lazy" decoding="async" />
   <div class="rasgo-contenido">
-    <img class="rasgo-img" src="/proyects/imagenes/lerp/lerp-proyectando.png" alt="LERP proyectando un dibujo con un pizarrón portátil" loading="lazy" decoding="async" />
+    <img class="rasgo-img" src={`${base}imagenes/lerp/lerp-proyectando.png`} alt="LERP proyectando un dibujo con un pizarrón portátil" loading="lazy" decoding="async" />
     <div class="rasgo-texto">
       <p class="rasgo-eyebrow">Explicaciones con dibujos</p>
       <p class="rasgo-frase">Si tiene que explicar algo, no saca texto aburrido — <strong>proyecta</strong>.</p>

@@ -1,13 +1,16 @@
+---
+const base = import.meta.env.BASE_URL;
+---
 <nav>
-        <a href="/proyects/" class="nav-link activo">INICIO</a>
-        <a href="/proyects/Inicio/nosotros" class="nav-link">NOSOTROS</a>
+        <a href={`${base}`} class="nav-link activo">INICIO</a>
+        <a href={`${base}Inicio/nosotros`} class="nav-link">NOSOTROS</a>
 
         <div class ="logo-box">
-            <img class = "logo" src="/proyects/imagenes/inicio/logoFINAL.png">
+            <img class = "logo" src={`${base}imagenes/inicio/logoFINAL.png`}>
         </div>
 
-        <a href="/proyects/#Proyectos" class="nav-link">PROYECTOS</a>
-        <a href="/proyects/gamejams/inicioGame" class="nav-link">GAME JAMS</a>
+        <a href={`${base}#Proyectos`} class="nav-link">PROYECTOS</a>
+        <a href={`${base}gamejams/inicioGame`} class="nav-link">GAME JAMS</a>
     </nav>
 
 <style>

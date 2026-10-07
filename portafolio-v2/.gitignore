@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Builds de Unity comprimidos (.br): GitHub Pages no los sirve, se usan los archivos sin comprimir
+public/games/**/*.br

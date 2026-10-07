@@ -1,18 +1,19 @@
 ---
+const base = import.meta.env.BASE_URL;
 // src/components/NavCoordenadas.astro
 const currentPath = Astro.url.pathname;
 
 const links = [
-  { href: "/proyects/Coordenadas/graficar", label: "GRAFICAR" },
-  { href: "/proyects/Coordenadas/formulas", label: "FORMULAS" },
-  { href: "/proyects/Coordenadas/practicar", label: "PRACTICAR" },
+  { href: `${base}Coordenadas/graficar`, label: "GRAFICAR" },
+  { href: `${base}Coordenadas/formulas`, label: "FORMULAS" },
+  { href: `${base}Coordenadas/practicar`, label: "PRACTICAR" },
 ];
 ---
 
 <nav class="game-nav">
     <div class="game-nav-logo">
-        <a href="/proyects/">
-            <img src="/proyects/imagenes/inicio/logo1FINAL.png" alt="ELOA Logo">
+        <a href={`${base}`}>
+            <img src={`${base}imagenes/inicio/logo1FINAL.png`} alt="ELOA Logo">
         </a>
     </div>
     {links.map(link => (

@@ -1,20 +1,21 @@
 ---
+const base = import.meta.env.BASE_URL;
 // src/components/NavParty.astro
 const currentPath = Astro.url.pathname;
 
 const links = [
-  { href: "/proyects/party-problems/inicioParty", label: "INICIO" },
-  { href: "/proyects/party-problems/partyproblems", label: "JUEGO" },
-  { href: "/proyects/party-problems/sobrejuegoParty", label: "SOBRE EL JUEGO" },
-  /*{ href: "/proyects/party-problems/videosParty", label: "VIDEOS" },*/
-  { href: "/proyects/party-problems/evidenciasPart", label: "EVIDENCIAS" },
+  { href: `${base}party-problems/inicioParty`, label: "INICIO" },
+  { href: `${base}party-problems/partyproblems`, label: "JUEGO" },
+  { href: `${base}party-problems/sobrejuegoParty`, label: "SOBRE EL JUEGO" },
+  /*{ href: `${base}party-problems/videosParty`, label: "VIDEOS" },*/
+  { href: `${base}party-problems/evidenciasPart`, label: "EVIDENCIAS" },
 ];
 ---
 
 <nav class="game-nav">
     <div class="game-nav-logo">
-        <a href="/proyects/">
-            <img src="/proyects/imagenes/inicio/logo1FINAL.png" alt="ELOA Logo">
+        <a href={`${base}`}>
+            <img src={`${base}imagenes/inicio/logo1FINAL.png`} alt="ELOA Logo">
         </a>
     </div>
     {links.map(link => (

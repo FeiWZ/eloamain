@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL;
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
@@ -7,7 +8,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <p class="texto-principal">
         Eat <span class="destacado-naranja">Logic</span> Output <span class="destacado-rosa">Art</span>
     </p>
-    <img class="lerp-mirando" src={`${import.meta.env.BASE_URL}/imagenes/nosotros/LERPmirandoarriba2.png`} alt="LERP mirando hacia arriba" decoding="async" />
+    <img class="lerp-mirando" src={`${import.meta.env.BASE_URL}imagenes/nosotros/LERPmirandoarriba2.png`} alt="LERP mirando hacia arriba" decoding="async" />
 </div>
 
 <section class="mas-alla-seccion">
@@ -31,9 +32,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
 
     <div class="columna-iconos">
-      <img src="/proyects/imagenes/nosotros/eat.png" alt="Eat" loading="lazy" decoding="async">
-      <img src="/proyects/imagenes/nosotros/logicandart.png" alt="Logic / Output" loading="lazy" decoding="async">
-      <img src="/proyects/imagenes/nosotros/art.png" alt="Art" loading="lazy" decoding="async">
+      <img src={`${base}imagenes/nosotros/eat.png`} alt="Eat" loading="lazy" decoding="async">
+      <img src={`${base}imagenes/nosotros/logicandart.png`} alt="Logic / Output" loading="lazy" decoding="async">
+      <img src={`${base}imagenes/nosotros/art.png`} alt="Art" loading="lazy" decoding="async">
     </div>
 
   </div>
@@ -95,10 +96,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="tarjeta-foto-contenedor" onclick="this.classList.toggle('girar')">
     <div class="tarjeta-foto-flipper">
       <div class="lado frente">
-        <img class="img_integrante1" src="/proyects/imagenes/nosotros/foto_mia.jpg" alt="Foto Mia" loading="lazy" decoding="async">
+        <img class="img_integrante1" src={`${base}imagenes/nosotros/foto_mia.jpg`} alt="Foto Mia" loading="lazy" decoding="async">
     </div>
       <div class="lado atras">
-        <img class="img_integrante1" src="/proyects/imagenes/nosotros/mia.png" alt="Dibujo Mia" loading="lazy" decoding="async">
+        <img class="img_integrante1" src={`${base}imagenes/nosotros/mia.png`} alt="Dibujo Mia" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
@@ -107,7 +108,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <div class="titulo_integrante1">Mia Valenzuela</div>
           <div class="texto_integrante1"><span class="puesto-integrante">Technical Game Dev</span><br>En cuanto a la lógica de trabajo, se especializa en el manejo de Game Engines, y su producción artística está enfocada en el diseño de niveles.</div>
           <a href="https://www.instagram.com/miaren._" target="_blank" rel="noopener noreferrer">
-              <img class="img_esquina1" src="/proyects/imagenes/nosotros/instagram_blanco.png" alt="Instagram Mia" loading="lazy" decoding="async">
+              <img class="img_esquina1" src={`${base}imagenes/nosotros/instagram_blanco.png`} alt="Instagram Mia" loading="lazy" decoding="async">
           </a>
       </div>
 </div>
@@ -117,16 +118,16 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <div class="titulo_integrante1">Gloria Sánchez</div>
           <div class="texto_integrante1"> <span class="puesto-integrante">Web Architect</span> <br> Su enfoque lógico se centra en el Modelado Full-Stack, mientras que en la parte creativa y de entrega se encarga del diseño de interfaces.</div>
           <a href="https://www.instagram.com/gloriaschzz_" target="_blank" rel="noopener noreferrer">
-              <img class="img_esquina2" src="/proyects/imagenes/nosotros/instagram_blanco.png" alt="Instagram Gloria" loading="lazy" decoding="async">
+              <img class="img_esquina2" src={`${base}imagenes/nosotros/instagram_blanco.png`} alt="Instagram Gloria" loading="lazy" decoding="async">
           </a>
   </div>
   <div class="tarjeta-foto-contenedor" onclick="this.classList.toggle('girar')">
     <div class="tarjeta-foto-flipper">
       <div class="lado frente">
-        <img class="img_integrante1" src="/proyects/imagenes/nosotros/foto_gloria.jpg" alt="Foto Gloria" loading="lazy" decoding="async">
+        <img class="img_integrante1" src={`${base}imagenes/nosotros/foto_gloria.jpg`} alt="Foto Gloria" loading="lazy" decoding="async">
     </div>
       <div class="lado atras">
-        <img class="img_integrante1" src="/proyects/imagenes/nosotros/gloria.png" alt="Dibujo Gloria" loading="lazy" decoding="async">
+        <img class="img_integrante1" src={`${base}imagenes/nosotros/gloria.png`} alt="Dibujo Gloria" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
@@ -136,10 +137,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <div class="tarjeta-foto-contenedor" onclick="this.classList.toggle('girar')">
     <div class="tarjeta-foto-flipper">
       <div class="lado frente">
-        <img class="img_integrante1" src="/proyects/imagenes/nosotros/foto_brandon.jpg" alt="Foto Brandon" loading="lazy" decoding="async">
+        <img class="img_integrante1" src={`${base}imagenes/nosotros/foto_brandon.jpg`} alt="Foto Brandon" loading="lazy" decoding="async">
     </div>
       <div class="lado atras">
-        <img class="img_integrante1" src="/proyects/imagenes/nosotros/brandon.png" alt="Dibujo Brandon" loading="lazy" decoding="async">
+        <img class="img_integrante1" src={`${base}imagenes/nosotros/brandon.png`} alt="Dibujo Brandon" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
@@ -148,7 +149,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <div class="titulo_integrante1">Brandon Miranda</div>
           <div class="texto_integrante1"><span class="puesto-integrante">Narrative Designer</span><br>Su enfoque lógico parte de la Investigación, y su expresión artística se concentra en la construcción de mundos.</div>
           <a href="https://www.instagram.com/brnndnn_miir" target="_blank" rel="noopener noreferrer">
-              <img class="img_esquina1" src="/proyects/imagenes/nosotros/instagram_blanco.png" alt="Instagram Brandon" loading="lazy" decoding="async">
+              <img class="img_esquina1" src={`${base}imagenes/nosotros/instagram_blanco.png`} alt="Instagram Brandon" loading="lazy" decoding="async">
           </a>
   </div>
 </div>
@@ -158,22 +159,22 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <div class="titulo_integrante1">Fei Wu</div>
           <div class="texto_integrante1"><span class="puesto-integrante">Visual Lead</span> <br> Su base lógica y metodológica se apoya en el uso de Vectores, y su contribución creativa se traduce en la realización de ilustraciones.</div>
           <a href="https://www.instagram.com/fifibnnuy" target="_blank" rel="noopener noreferrer">
-              <img class="img_esquina2" src="/proyects/imagenes/nosotros/instagram_blanco.png" alt="Instagram Fei" loading="lazy" decoding="async">
+              <img class="img_esquina2" src={`${base}imagenes/nosotros/instagram_blanco.png`} alt="Instagram Fei" loading="lazy" decoding="async">
           </a>
   </div>
   <div class="tarjeta-foto-contenedor" onclick="this.classList.toggle('girar')">
     <div class="tarjeta-foto-flipper">
       <div class="lado frente">
-        <img class="img_integrante1" src="/proyects/imagenes/nosotros/foto_fei.jpeg" alt="Foto Fei" loading="lazy" decoding="async">
+        <img class="img_integrante1" src={`${base}imagenes/nosotros/foto_fei.jpeg`} alt="Foto Fei" loading="lazy" decoding="async">
     </div>
       <div class="lado atras">
-        <img class="img_integrante1" src="/proyects/imagenes/nosotros/fei.png" alt="Dibujo Fei" loading="lazy" decoding="async">
+        <img class="img_integrante1" src={`${base}imagenes/nosotros/fei.png`} alt="Dibujo Fei" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
 </div>
  <a href={`${import.meta.env.BASE_URL}lerp`}>
-    <img class="lerp_naranja" src="/proyects/imagenes/nosotros/LERP_naranja.png" alt="LERP icono" loading="lazy" decoding="async">
+    <img class="lerp_naranja" src={`${base}imagenes/nosotros/LERP_naranja.png`} alt="LERP icono" loading="lazy" decoding="async">
   </a>
 </div>
 </BaseLayout>
