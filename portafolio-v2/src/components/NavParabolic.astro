@@ -1,20 +1,21 @@
 ---
+const base = import.meta.env.BASE_URL;
 // src/components/NavParabolic.astro
 const currentPath = Astro.url.pathname;
 
 const links = [
-  { href: "/proyects/parabolic-pets/inicioPets", label: "INICIO" },
-  { href: "/proyects/parabolic-pets/parabolicpets", label: "JUEGO" },
-  { href: "/proyects/parabolic-pets/sobrejuegoPets", label: "SOBRE EL JUEGO" },
-  { href: "/proyects/parabolic-pets/videosPets", label: "VIDEOS" },
-  { href: "/proyects/parabolic-pets/evidenciasPets", label: "EVIDENCIAS" },
+  { href: `${base}parabolic-pets/inicioPets`, label: "INICIO" },
+  { href: `${base}parabolic-pets/parabolicpets`, label: "JUEGO" },
+  { href: `${base}parabolic-pets/sobrejuegoPets`, label: "SOBRE EL JUEGO" },
+  { href: `${base}parabolic-pets/videosPets`, label: "VIDEOS" },
+  { href: `${base}parabolic-pets/evidenciasPets`, label: "EVIDENCIAS" },
 ];
 ---
 
 <nav class="game-nav">
     <div class="game-nav-logo">
-        <a href="/proyects/">
-            <img src="/proyects/imagenes/inicio/logo1FINAL.png" alt="ELOA Logo">
+        <a href={`${base}`}>
+            <img src={`${base}imagenes/inicio/logo1FINAL.png`} alt="ELOA Logo">
         </a>
     </div>
     {links.map(link => (

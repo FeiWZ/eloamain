@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL;
 import BaseLayoutPets from '../../layouts/BaseLayoutPets.astro';
 ---
 
@@ -18,7 +19,7 @@ import BaseLayoutPets from '../../layouts/BaseLayoutPets.astro';
     <div class="containermini">
     <div class="video-cuadro">
         <video controls width="100%">
-             <source src="/proyects/imagenes/parabolicpets/cutscene1.mp4" type="video/mp4">
+             <source src={`${base}imagenes/parabolicpets/cutscene1.mp4`} type="video/mp4">
         </video>
     </div>
     <p class="video-titulo">Cut Scene 1</p>
@@ -27,7 +28,7 @@ import BaseLayoutPets from '../../layouts/BaseLayoutPets.astro';
     <div class="containermini">
             <div class="video-cuadro">
             <video controls width="100%">
-                <source src="/proyects/imagenes/parabolicpets/cutscene2.mp4" type="video/mp4">
+                <source src={`${base}imagenes/parabolicpets/cutscene2.mp4`} type="video/mp4">
             </video>
         </div>
         <p class="video-titulo">Cut Scene 2</p>

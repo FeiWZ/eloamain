@@ -1,19 +1,22 @@
+---
+const base = import.meta.env.BASE_URL;
+---
 <footer class="footer-eloa">
   <div class="arco arco-izquierdo"></div>
   <div class="arco arco-derecho"></div>
 
   <div class="redes-sociales">
     <a href="https://www.instagram.com/eloadevteam" target="_blank" rel="noopener noreferrer">
-        <img class="imagenes_redes" src="/proyects/imagenes/inicio/instagram.png" alt="Instagram" />
+        <img class="imagenes_redes" src={`${base}imagenes/inicio/instagram.png`} alt="Instagram" />
     </a>
-        <img class="imagenes_redes" src="/proyects/imagenes/inicio/correo.png" alt="Correo" />
+        <img class="imagenes_redes" src={`${base}imagenes/inicio/correo.png`} alt="Correo" />
   </div>
 
   <div class="footer-contenido">
     
     <div class="footer-header">
       <div class="logo-principal">
-        <img src="/proyects/imagenes/inicio/logo1FINAL.png" alt="ELOA Dev Team" class="img-logo-eloa">
+        <img src={`${base}imagenes/inicio/logo1FINAL.png`} alt="ELOA Dev Team" class="img-logo-eloa">
     </div>
       <div class="linea-separadora"></div>
       
@@ -34,7 +37,7 @@
 
       <div class="columna-info2">
         <h4 class="titulo-oscuro">Aprovechamos este espacio para<br>reconocer a</h4>
-        <img src="/proyects/imagenes/inicio/logo-unison.png" alt="Universidad de Sonora" class="logo-unison">
+        <img src={`${base}imagenes/inicio/logo-unison.png`} alt="Universidad de Sonora" class="logo-unison">
         
         <div class="profesor-seccion">
           <p class="texto-normal">A nuestro profesor encargado: Jose Alfredo Galaviz Sañudo</p>

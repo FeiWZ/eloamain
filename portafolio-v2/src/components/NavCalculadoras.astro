@@ -1,18 +1,19 @@
 ---
+const base = import.meta.env.BASE_URL;
 // src/components/NavCalculadoras.astro
 const pathname = Astro.url.pathname;
 ---
 
 <nav class="nav-calculadoras">
     <div class="logo-box">
-        <a href="/proyects/">
-        <img class="logo" src="/proyects/imagenes/inicio/logo1FINAL.png" width="120px" alt="ELOA Logo">
+        <a href={`${base}`}>
+        <img class="logo" src={`${base}imagenes/inicio/logo1FINAL.png`} width="120px" alt="ELOA Logo">
         </a>
     </div>
     
-        <a href="/proyects/Calculadoras/calculadoras" class="nav-link activo">INICIO</a>
-        <a href="/proyects/Calculadoras/conversion" class="nav-link">CONVERSIÓN DE COORDENADAS</a>
-        <a href="/proyects/Calculadoras/distancia" class="nav-link">DISTANCIA</a>
+        <a href={`${base}Calculadoras/calculadoras`} class="nav-link activo">INICIO</a>
+        <a href={`${base}Calculadoras/conversion`} class="nav-link">CONVERSIÓN DE COORDENADAS</a>
+        <a href={`${base}Calculadoras/distancia`} class="nav-link">DISTANCIA</a>
 </nav>
 
 <style>

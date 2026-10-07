@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL;
 import BaseLayoutPets from '../../layouts/BaseLayoutPets.astro';
 ---
 
@@ -6,7 +7,7 @@ import BaseLayoutPets from '../../layouts/BaseLayoutPets.astro';
 
     <section id="escena-inicio" data-scene>
         <header class="header-con-ola">
-            <img src="/proyects/imagenes/parabolicpets/titulo.png" alt="Parabolic Pets - Simulación de movimiento parabólico" class="imagen-flotante">
+            <img src={`${base}imagenes/parabolicpets/titulo.webp`} alt="Parabolic Pets - Simulación de movimiento parabólico" class="imagen-flotante" width="978" height="334" fetchpriority="high">
 
             <div class="wave">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -37,11 +38,11 @@ import BaseLayoutPets from '../../layouts/BaseLayoutPets.astro';
 
         <div class="container_imagenes">
             <div class="mitad-imagen">
-                <img src="/proyects/imagenes/parabolicpets/imagen1.png" width="600" alt="">
+                <img src={`${base}imagenes/parabolicpets/imagen1.webp`} width="600" height="338" loading="lazy" decoding="async" alt="">
             </div>
 
             <div class="mitad-imagen">
-                <img src="/proyects/imagenes/parabolicpets/imagen2.png" width="800" alt="">
+                <img src={`${base}imagenes/parabolicpets/imagen2.webp`} width="800" height="450" loading="lazy" decoding="async" alt="">
             </div>
         </div>
         <br><br><br>
@@ -49,25 +50,25 @@ import BaseLayoutPets from '../../layouts/BaseLayoutPets.astro';
         <strong><p class="onest1">LA PRÁCTICA ES LO QUE SIGUE</p></strong>
 
         <div class="container">
-            <center><img src="/proyects/imagenes/parabolicpets/imagen3.png" width="900px" alt=""></center>
+            <center><img src={`${base}imagenes/parabolicpets/imagen3.webp`} width="900" height="506" class="img-resp" loading="lazy" decoding="async" alt=""></center>
         </div>
         <br><br>
     </section>
 
     <section id="escena-ayuda" data-scene>
         <div class="container1">
-            <img src="/proyects/imagenes/parabolicpets/imagen4.pnf" class="img3" alt="">
+            <img src={`${base}imagenes/parabolicpets/imagen4.webp`} class="img3" width="1600" height="900" loading="lazy" decoding="async" alt="">
         </div>
     </section>
 
     <section id="escena-picnic" data-scene>
         <div class="container2">
             <p class="creepy">¿DONDE ESTAMOS?</p>
-            <img src="/proyects/imagenes/parabolicpets/animales1.png" width="900px" class="rebote" alt="">
+            <img src={`${base}imagenes/parabolicpets/animales1.webp`} width="900" height="506" class="rebote img-resp" loading="lazy" decoding="async" alt="">
         </div>
         <br><br><br><br><br>
 
-        <a href="/proyects/Parabolic Pets/parabolicpets" class="boton_jugar">¡Jugar!</a>
+        <a href={`${base}parabolic-pets/parabolicpets`} class="boton_jugar">¡Jugar!</a>
         <br><br><br><br><br><br>
     </section>
 
@@ -131,7 +132,7 @@ body{
 .header-con-ola{
     position: relative;
     height: 98vh;
-    background-image: url('/proyects/imagenes/parabolicpets/fondo1.png');
+    background-image: url('/imagenes/parabolicpets/fondo1.webp');
     background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
@@ -257,20 +258,24 @@ body{
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 24px 20px;
     width: 100%;
-    height: 400px;
+    min-height: 400px; /* antes era height fijo: si las imágenes no cabían, se encimaban con la siguiente sección */
     background-color: #f9f9f9;
     flex-direction: row;
 }
 
+/* Las dos imágenes comparten la fila; si no caben, bajan una debajo de otra */
 .mitad-imagen{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1 1 320px;
+    max-width: 640px;
 }
 
 .mitad-imagen img{
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
@@ -292,8 +297,24 @@ body{
     max-width: 100%;
 }
 
+.img-resp{
+    max-width: 100%;
+    height: auto;
+}
+
+/* En celular los bloques crecen con su contenido en vez de medir 400px fijos */
+@media (max-width: 768px){
+    .container_imagenes,
+    .container2{
+        height: auto;
+        padding: 24px 16px;
+    }
+    .creepy{ margin-top: 0; }
+}
+
 .img3{
     width: 100%;
+    height: auto;
     margin-top: -40px;
 }
 
@@ -301,7 +322,7 @@ body{
     font-family: 'Creepster', cursive;
     margin-top: -70px;
     text-align: center;
-    font-size: 100px;
+    font-size: clamp(48px, 11vw, 100px);
     color: #FFCF0D;
     -webkit-text-stroke: 3px #B7521B;
 }
@@ -361,5 +382,59 @@ h2{
 
 .boton_jugar:active{
     transform: translateY(0);
+}
+
+/* ===== Ajustes para celular (van al final para que ganen sobre las reglas de arriba) ===== */
+
+/* el botón "Desliza para empezar" se acomoda dentro de su sección, no al final de la página */
+#escena-inicio{
+    position: relative;
+}
+
+@media (max-width: 768px){
+    /* "fixed" en celular estira el fondo a lo alto de toda la página: por eso se veía tan acercado */
+    .header-con-ola{
+        background-attachment: scroll;
+        margin-bottom: 40px;
+    }
+
+    .creepy{
+        margin-top: 0;
+    }
+
+    /* menos huecos alrededor del botón ¡Jugar! */
+    #escena-picnic br{
+        display: none;
+    }
+
+    .boton_jugar{
+        margin: 32px auto 64px;
+    }
+}
+
+/* Celular vertical: fondo recortado al centro (villano y mascotas), completo abajo,
+   y el cielo continúa arriba, donde va el título */
+@media (max-width: 768px) and (orientation: portrait){
+    .header-con-ola{
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 3 / 4;
+        max-height: 82svh;
+        background:
+            url('/imagenes/parabolicpets/fondo1-movil.webp') center bottom / 100% auto no-repeat,
+            linear-gradient(180deg, #0f47a6 0%, #1656b8 60%);
+        padding-top: 0;
+    }
+
+    .imagen-flotante{
+        top: 8%;
+        width: 86vw;
+    }
+
+    .scroll-cue{
+        bottom: 18px;
+        font-size: 12px;
+        padding: 7px 14px 8px;
+    }
 }
 </style>

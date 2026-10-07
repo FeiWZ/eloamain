@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL;
 import BaseLayoutCoord from '../../layouts/BaseLayoutCoord.astro';
 ---
 
@@ -31,13 +32,13 @@ import BaseLayoutCoord from '../../layouts/BaseLayoutCoord.astro';
       <div class="botones">
         <a href="#popupPapel">
           <button class="btn-opcion">
-            <img src="/proyects/imagenes/coordenadas/papel.png" alt="" loading="lazy" decoding="async">
+            <img src={`${base}imagenes/coordenadas/papel.png`} alt="" loading="lazy" decoding="async">
             PAPEL
           </button>
         </a>
         <a href="#popupGeogebra">
           <button class="btn-opcion">
-            <img src="/proyects/imagenes/coordenadas/geogebra.png" alt="" loading="lazy" decoding="async">
+            <img src={`${base}imagenes/coordenadas/geogebra.png`} alt="" loading="lazy" decoding="async">
             GEOGEBRA
           </button>
         </a>
@@ -46,7 +47,7 @@ import BaseLayoutCoord from '../../layouts/BaseLayoutCoord.astro';
 
     <img
       class="robot"
-      src="/proyects/imagenes/coordenadas/LERP.png"
+      src={`${base}imagenes/coordenadas/LERP.png`}
       alt="Robot ELOA"
       loading="lazy"
       decoding="async"
@@ -60,12 +61,12 @@ import BaseLayoutCoord from '../../layouts/BaseLayoutCoord.astro';
         <span class="cerrar">&times;</span>
       </a>
       <!-- TODO: ajusta la ruta/cantidad de imágenes de los pasos en papel -->
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enPapel/1.png" alt="Paso 1 en papel" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enPapel/2.png" alt="Paso 2 en papel" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enPapel/3.png" alt="Paso 3 en papel" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enPapel/4.png" alt="Paso 4 en papel" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enPapel/5.png" alt="Paso 5 en papel" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enPapel/6.png" alt="Paso 6 en papel" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enPapel/1.png`} alt="Paso 1 en papel" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enPapel/2.png`} alt="Paso 2 en papel" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enPapel/3.png`} alt="Paso 3 en papel" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enPapel/4.png`} alt="Paso 4 en papel" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enPapel/5.png`} alt="Paso 5 en papel" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enPapel/6.png`} alt="Paso 6 en papel" loading="lazy" decoding="async">
     </div>
   </div>
 
@@ -75,16 +76,16 @@ import BaseLayoutCoord from '../../layouts/BaseLayoutCoord.astro';
         <span class="cerrar">&times;</span>
       </a>
       <!-- TODO: ajusta la ruta/cantidad de imágenes de los pasos en geogebra -->
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enGeogebra/1.png" alt="Paso 1 en GeoGebra" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enGeogebra/2.png" alt="Paso 2 en GeoGebra" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enGeogebra/3.png" alt="Paso 3 en GeoGebra" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enGeogebra/4.png" alt="Paso 4 en GeoGebra" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enGeogebra/5.png" alt="Paso 5 en GeoGebra" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enGeogebra/6.png" alt="Paso 6 en GeoGebra" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enGeogebra/7.png" alt="Paso 7 en GeoGebra" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enGeogebra/8.png" alt="Paso 8 en GeoGebra" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enGeogebra/9.png" alt="Paso 9 en GeoGebra" loading="lazy" decoding="async">
-      <img class="popup-img" src="/proyects/imagenes/coordenadas/enGeogebra/10.png" alt="Paso 10 en GeoGebra" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enGeogebra/1.png`} alt="Paso 1 en GeoGebra" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enGeogebra/2.png`} alt="Paso 2 en GeoGebra" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enGeogebra/3.png`} alt="Paso 3 en GeoGebra" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enGeogebra/4.png`} alt="Paso 4 en GeoGebra" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enGeogebra/5.png`} alt="Paso 5 en GeoGebra" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enGeogebra/6.png`} alt="Paso 6 en GeoGebra" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enGeogebra/7.png`} alt="Paso 7 en GeoGebra" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enGeogebra/8.png`} alt="Paso 8 en GeoGebra" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enGeogebra/9.png`} alt="Paso 9 en GeoGebra" loading="lazy" decoding="async">
+      <img class="popup-img" src={`${base}imagenes/coordenadas/enGeogebra/10.png`} alt="Paso 10 en GeoGebra" loading="lazy" decoding="async">
     </div>
   </div>
 

@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL;
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
@@ -34,12 +35,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
         
 <div class="tarjeta-central">
-    <img class="logo-central" src="/proyects/imagenes/inicio/logo1FINALL.png" alt="Logo de ELOA" fetchpriority="high" decoding="async" />
+    <img class="logo-central" src={`${base}imagenes/inicio/logo1FINALL.png`} alt="Logo de ELOA" fetchpriority="high" decoding="async" />
 </div>
 </section>
 
 <div class="container-lerp1-condel"> 
-    <img class="lerp1" src="/proyects/imagenes/inicio/LERPsalu2.png" alt="" decoding="async" />
+    <img class="lerp1" src={`${base}imagenes/inicio/LERPsalu2.png`} alt="" decoding="async" />
 
     <div class="container_delgado">
         <p class="texto-principal">
@@ -48,10 +49,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
     <div class="container_redes">
         <a href="https://www.instagram.com/eloadevteam" target="_blank" rel="noopener noreferrer">
-            <img class="imagenes_redes" src="/proyects/imagenes/inicio/instagram.png" alt="Instagram" decoding="async" />
+            <img class="imagenes_redes" src={`${base}imagenes/inicio/instagram.png`} alt="Instagram" decoding="async" />
         </a>
         <a href="mailto:eloadevteam@gmail.com">
-            <img class="imagenes_redes" src="/proyects/imagenes/inicio/correo.png" alt="Correo" decoding="async" />
+            <img class="imagenes_redes" src={`${base}imagenes/inicio/correo.png`} alt="Correo" decoding="async" />
         </a>
     </div>
 </div>
@@ -68,7 +69,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <p class="texto-abstracto"> En ELOA, transformamos la teoría en experiencias interactivas. Somos estudiantes comprometidos con facilitar el aprendizaje a través de juegos y herramientas, creando un ecosistema digital donde educar es divertido y simultáneo. </p>
             <p class="bienvenida-cta">Explora nuestra visión de la tecnología.</p>
         </div>
-        <img class="bienvenida-ilustracion" src="/proyects/imagenes/inicio/nosotros.png" alt="Ilustración estilo caricatura del equipo ELOA junto a su mascota robot, alrededor de una mesa" loading="lazy" decoding="async" />
+        <img class="bienvenida-ilustracion" src={`${base}imagenes/inicio/nosotros.png`} alt="Ilustración estilo caricatura del equipo ELOA junto a su mascota robot, alrededor de una mesa" loading="lazy" decoding="async" />
     </div>
 </section>
 <br />
@@ -87,28 +88,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       
       <div class="carrusel-tarjetas" id="carruselTarjetas">
         
-        <div class="team-member-cardd card1" id="cardParticulas" role="button" tabindex="0">
-          <div class="card-bottom"><img src="/proyects/imagenes/inicio/miniLERP.png" alt="" loading="lazy" decoding="async" /></div>
-        </div>
-
-        <a href="/proyects/party-problems/inicioParty" class="team-member-cardd card2">
-          <div class="card-bottom"><img src="/proyects/imagenes/inicio/miniLERP.png" alt="" loading="lazy" decoding="async" /></div>
+        <a href={`${base}protocol-entropy/inicioProtocol`} class="team-member-cardd card1" aria-label="Protocol Entropy">
+          <div class="card-bottom"><img src={`${base}imagenes/inicio/miniLERP.png`} alt="" loading="lazy" decoding="async" /></div>
         </a>
 
-        <a href="/proyects/parabolic-pets/inicioPets" class="team-member-cardd card3">
-          <div class="card-bottom"><img src="/proyects/imagenes/inicio/miniLERP.png" alt="" loading="lazy" decoding="async" /></div>
+        <a href={`${base}party-problems/inicioParty`} class="team-member-cardd card2">
+          <div class="card-bottom"><img src={`${base}imagenes/inicio/miniLERP.png`} alt="" loading="lazy" decoding="async" /></div>
         </a>
 
-        <a href="/proyects/Calculadoras/calculadoras" class="team-member-cardd card4">
-            <div class="card-bottom"><img src="/proyects/imagenes/inicio/miniLERP.png" alt="" loading="lazy" decoding="async" /></div>
+        <a href={`${base}parabolic-pets/inicioPets`} class="team-member-cardd card3">
+          <div class="card-bottom"><img src={`${base}imagenes/inicio/miniLERP.png`} alt="" loading="lazy" decoding="async" /></div>
         </a>
 
-        <a href="/proyects/Coordenadas/graficar" class="team-member-cardd card5">
-          <div class="card-bottom"><img src="/proyects/imagenes/inicio/miniLERP.png" alt="" loading="lazy" decoding="async" /></div>
+        <a href={`${base}Calculadoras/calculadoras`} class="team-member-cardd card4">
+            <div class="card-bottom"><img src={`${base}imagenes/inicio/miniLERP.png`} alt="" loading="lazy" decoding="async" /></div>
         </a>
 
-        <a href="/proyects/Weavy/inicioWeavy" class="team-member-cardd card6">
-          <div class="card-bottom"><img src="/proyects/imagenes/inicio/miniLERP.png" alt="" loading="lazy" decoding="async" /></div>
+        <a href={`${base}Coordenadas/graficar`} class="team-member-cardd card5">
+          <div class="card-bottom"><img src={`${base}imagenes/inicio/miniLERP.png`} alt="" loading="lazy" decoding="async" /></div>
+        </a>
+
+        <a href={`${base}Weavy/inicioWeavy`} class="team-member-cardd card6">
+          <div class="card-bottom"><img src={`${base}imagenes/inicio/miniLERP.png`} alt="" loading="lazy" decoding="async" /></div>
         </a>
 
       </div> 
@@ -121,7 +122,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <div class="modal-box">
     <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
     <h2>Trabajo en progreso</h2>
-    <img class="modal-image" src="/proyects/imagenes/inicio/lerpBombilla.png" alt="Trabajo en progreso" />
+    <img class="modal-image" src={`${base}imagenes/inicio/lerpBombilla.png`} alt="Trabajo en progreso" />
   </div>
 </div>
 
@@ -260,7 +261,7 @@ p{
     height:110px; 
     left:300px; 
     top: 40px; 
-    background-image: url('/proyects/imagenes/inicio/icon1.png');
+    background-image: url('/imagenes/inicio/icon1.png');
     background-size: cover;    /*  la imagen cubre todo el cuadro */
     background-position: center; /* centrar la imagen */
     position: absolute;
@@ -272,7 +273,7 @@ p{
      height:110px; 
      left:-50px; 
      top:380px;
-     background-image: url('/proyects/imagenes/inicio/icon2.png');
+     background-image: url('/imagenes/inicio/icon2.png');
     background-size: cover;    /*  la imagen cubre todo el cuadro */
     background-position: center; /* centrar la imagen */
     position: absolute; 
@@ -283,7 +284,7 @@ p{
     height:110px; 
     left:280px; 
     top:340px;
-    background-image: url('/proyects/imagenes/inicio/icon3.png');
+    background-image: url('/imagenes/inicio/icon3.png');
     background-size: cover;    /*  la imagen cubre todo el cuadro */
     background-position: center; /* centrar la imagen */
     position: absolute;
@@ -294,7 +295,7 @@ p{
     height:110px; 
     left:-90px; 
     top:-70px; 
-    background-image: url('/proyects/imagenes/inicio/icon4.png');
+    background-image: url('/imagenes/inicio/icon4.png');
     background-size: cover;    /*  la imagen cubre todo el cuadro */
     background-position: center; /* centrar la imagen */
     position: absolute;
@@ -305,7 +306,7 @@ p{
     height:110px; 
     right:10px; 
     top:270px; 
-    background-image: url('/proyects/imagenes/inicio/icon5.png');
+    background-image: url('/imagenes/inicio/icon5.png');
     background-size: cover;    /*  la imagen cubre todo el cuadro */
     background-position: center; /* centrar la imagen */
     position: absolute;
@@ -316,7 +317,7 @@ p{
     height:110px; 
     right:-10px; 
     top:700px; 
-    background-image: url('/proyects/imagenes/inicio/icon6.png');
+    background-image: url('/imagenes/inicio/icon6.png');
     background-size: cover;    /*  la imagen cubre todo el cuadro */
     background-position: center; /* centrar la imagen */
     position: absolute;
@@ -327,7 +328,7 @@ p{
     height:110px; 
     right:-300px; 
     top:380px; 
-    background-image: url('/proyects/imagenes/inicio/icon7.png');
+    background-image: url('/imagenes/inicio/icon7.png');
     background-size: cover;    /*  la imagen cubre todo el cuadro */
     background-position: center; /* centrar la imagen */
     position: absolute;
@@ -338,7 +339,7 @@ p{
     height:110px; 
     right:180px; 
     top:460px; 
-    background-image: url('/proyects/imagenes/inicio/icon8.png');
+    background-image: url('/imagenes/inicio/icon8.png');
     background-size: cover;    /*  la imagen cubre todo el cuadro */
     background-position: center; /* centrar la imagen */
     position: absolute;
@@ -572,12 +573,12 @@ h3{
     background-color: white;
 }
 
-.card1 { background-image: url('/proyects/imagenes/inicio/poster4.png'); }
-.card2 { background-image: url('/proyects/imagenes/inicio/poster5.png'); }
-.card3 { background-image: url('/proyects/imagenes/inicio/poster1.png'); }
-.card4 { background-image: url('/proyects/imagenes/inicio/poster3.png'); }
-.card5 { background-image: url('/proyects/imagenes/inicio/poster2.png'); }
-.card6 { background-image: url('/proyects/imagenes/inicio/poster6.png'); }
+.card1 { background-image: url('/imagenes/inicio/poster4.png'); }
+.card2 { background-image: url('/imagenes/inicio/poster5.png'); }
+.card3 { background-image: url('/imagenes/inicio/poster1.png'); }
+.card4 { background-image: url('/imagenes/inicio/poster3.png'); }
+.card5 { background-image: url('/imagenes/inicio/poster2.png'); }
+.card6 { background-image: url('/imagenes/inicio/poster6.png'); }
 
 
 

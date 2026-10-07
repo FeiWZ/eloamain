@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL;
 import BaseLayoutWeavy from '../../layouts/BaseLayoutWeavy.astro';
 ---
 
@@ -6,13 +7,13 @@ import BaseLayoutWeavy from '../../layouts/BaseLayoutWeavy.astro';
 
     <section id="escena-inicio" data-scene>
         <header class="header-con-ola">
-            <img src="/proyects/imagenes/weavy/titulo1.png" alt="Weavy" class="imagen-flotante">
+            <img src={`${base}imagenes/weavy/titulo1.png`} alt="Weavy" class="imagen-flotante">
 
             <div class="decoracion-header" aria-hidden="true">
-                <img src="/proyects/imagenes/weavy/caballito.png" class="deco-h deco-h1" alt="">
-                <img src="/proyects/imagenes/weavy/tortuga.png" class="deco-h deco-h2" alt="">
-                <img src="/proyects/imagenes/weavy/camaron.png" class="deco-h deco-h3" alt="">
-                <img src="/proyects/imagenes/weavy/cangrejo.png" class="deco-h deco-h4" alt="">
+                <img src={`${base}imagenes/weavy/caballito.png`} class="deco-h deco-h1" alt="">
+                <img src={`${base}imagenes/weavy/tortuga.png`} class="deco-h deco-h2" alt="">
+                <img src={`${base}imagenes/weavy/camaron.png`} class="deco-h deco-h3" alt="">
+                <img src={`${base}imagenes/weavy/cangrejo.png`} class="deco-h deco-h4" alt="">
             </div>
 
             <div class="wave">
@@ -43,7 +44,7 @@ import BaseLayoutWeavy from '../../layouts/BaseLayoutWeavy.astro';
 
         <div class="nori-dialogo">
             <div class="nori-imagen-wrap">
-                <img src="/proyects/imagenes/weavy/nori.png" class="nori-imagen" alt="Nori, el axolote de Weavy">
+                <img src={`${base}imagenes/weavy/nori.png`} class="nori-imagen" alt="Nori, el axolote de Weavy">
             </div>
 
             <div class="burbuja-texto">
@@ -59,17 +60,17 @@ import BaseLayoutWeavy from '../../layouts/BaseLayoutWeavy.astro';
 
         <div class="seccion-video">
             <div class="foto-lateral foto-izquierda">
-                <img src="/proyects/imagenes/weavy/fondo2.png" alt="">
+                <img src={`${base}imagenes/weavy/fondo2.png`} alt="">
             </div>
 
             <div class="video-central">
-                <video controls playsinline poster="/proyects/imagenes/weavy/video-poster.png">
-                    <source src="/proyects/imagenes/weavy/video-weavy.mp4" type="video/mp4">
+                <video controls playsinline poster={`${base}imagenes/weavy/video-poster.jpg`} preload="metadata">
+                    <source src={`${base}imagenes/weavy/video-weavy.mp4`} type="video/mp4">
                 </video>
             </div>
 
             <div class="foto-lateral foto-derecha">
-                <img src="/proyects/imagenes/weavy/fondo2.png" alt="">
+                <img src={`${base}imagenes/weavy/fondo3.png`} alt="">
             </div>
         </div>
 
@@ -177,7 +178,7 @@ body{
 .header-con-ola{
     position: relative;
     height: 98vh;
-    background-image: url('/proyects/imagenes/weavy/fondo1.png');
+    background-image: url('/imagenes/weavy/fondo1.png');
     background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
@@ -195,7 +196,7 @@ body{
     top: 200px;
     left: 50%;
     transform: translateX(-50%);
-    width: 800px;
+    width: 500px;
     max-width: 90vw;
     height: auto;
     animation: float 4s ease-in-out infinite;
