@@ -1,20 +1,21 @@
 ---
+const base = import.meta.env.BASE_URL;
 // src/components/NavProtocol.astro
 const currentPath = Astro.url.pathname;
-const base = "/proyects/protocol-entropy";
+const peBase = `${base}protocol-entropy`;
 
 const links = [
-  { href: `${base}/inicioProtocol`, label: "INICIO" },
-  { href: `${base}/inicioProtocol#sobre`, label: "SOBRE" },
-  { href: `${base}/fisicaProtocol`, label: "FÍSICA Y FICCIÓN" },
-  { href: `${base}/evidenciasProtocol`, label: "EVIDENCIAS" },
+  { href: `${peBase}/inicioProtocol`, label: "INICIO" },
+  { href: `${peBase}/inicioProtocol#sobre`, label: "SOBRE" },
+  { href: `${peBase}/fisicaProtocol`, label: "FÍSICA Y FICCIÓN" },
+  { href: `${peBase}/evidenciasProtocol`, label: "EVIDENCIAS" },
 ];
 ---
 
 <nav class="pe-nav">
     <div class="pe-nav-logo">
-        <a href="/proyects/" aria-label="Ir al inicio de ELOA">
-            <img src="/proyects/imagenes/inicio/logo1FINAL.png" alt="ELOA">
+        <a href={`${base}`} aria-label="Ir al inicio de ELOA">
+            <img src={`${base}imagenes/inicio/logo1FINAL.png`} alt="ELOA">
         </a>
     </div>
     {links.map(link => (

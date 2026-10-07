@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL;
 import BaseLayoutProtocol from '../../layouts/BaseLayoutProtocol.astro';
 
 
@@ -70,7 +71,7 @@ const pilotos = Array.from({ length: 6 });
       <span class="etiqueta">Idea en desarrollo</span>
 
       <div class="logo-holder">
-        <img class="logo-emblema" src="/proyects/imagenes/protocol-entropy/logo-protocol-entropy.webp" alt="Logo de Protocol Entropy" width="800" height="753" fetchpriority="high" />
+        <img class="logo-emblema" src={`${base}imagenes/protocol-entropy/logo-protocol-entropy.webp`} alt="Logo de Protocol Entropy" width="800" height="753" fetchpriority="high" />
         <h1 class="logo-texto">PROTOCOL<br />ENTROPY</h1>
       </div>
 
@@ -137,7 +138,7 @@ const pilotos = Array.from({ length: 6 });
     </div>
 
     <div class="firma-eloa">
-      <img src="/proyects/imagenes/inicio/logo-eloa-blanco.webp" alt="ELOA Dev Team" width="900" height="273" loading="lazy" decoding="async" />
+      <img src={`${base}imagenes/inicio/logo-eloa-blanco.webp`} alt="ELOA Dev Team" width="900" height="273" loading="lazy" decoding="async" />
     </div>
   </section>
 
